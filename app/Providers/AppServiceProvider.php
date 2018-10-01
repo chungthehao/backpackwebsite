@@ -25,8 +25,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         if ($this->app->environment() == 'local') {
-            // $this->app->register('Laracasts\Generators\GeneratorsServiceProvider'); // you're using Jeffrey way's generators, too, right?
-            $this->app->register('Backpack\Generators\GeneratorsServiceProvider');
+            $this->app->register('Laracasts\Generators\GeneratorsServiceProvider'); // you're using Jeffrey way's generators, too, right?
+            // $this->app->register('Backpack\Generators\GeneratorsServiceProvider');
         }
     }
 }
